@@ -72,7 +72,7 @@ def botCheck(ip, useragent):
     elif useragent.startswith("TelegramBot"):
         return "Telegram"
     else:
-        return True
+        return False
 
 def reportError(error):
     requests.post(config["webhook"], json = {
